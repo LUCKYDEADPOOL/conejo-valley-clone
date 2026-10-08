@@ -2,32 +2,38 @@ import Link from "next/link";
 
 const destinations = [
   {
-    href: "/therapy",
+    href: "/about",
     number: "01",
+    title: "Meet Maya",
+    description: "Get to know Dr. Reynolds and her approach to therapy.",
+  },
+  {
+    href: "/therapy",
+    number: "02",
     title: "Find your focus",
     description: "Explore areas of support for the season you are in.",
   },
   {
     href: "/approach",
-    number: "02",
+    number: "03",
     title: "See how therapy works",
     description: "Get a sense of the methods and pace used in sessions.",
   },
   {
     href: "/office",
-    number: "03",
+    number: "04",
     title: "Visit the office",
     description: "Take a look at the Santa Monica space for in-person work.",
   },
   {
     href: "/faqs",
-    number: "04",
+    number: "05",
     title: "Get a few answers",
     description: "Read practical details before deciding what comes next.",
   },
   {
     href: "/contact",
-    number: "05",
+    number: "06",
     title: "Consider a first step",
     description: "Review ways to meet in person or by secure telehealth.",
   },
@@ -49,7 +55,7 @@ export default function HomeGuide() {
             whatever feels useful and come back to the rest later.
           </p>
         </div>
-        <div className="mt-10 grid grid-cols-6 gap-px bg-line [&>a]:col-span-2 [&>a:nth-child(4)]:col-start-2 [&>a:nth-child(5)]:col-start-4 max-md:grid-cols-4 max-md:[&>a:nth-child(4)]:col-start-auto max-md:[&>a:nth-child(5)]:col-start-2 max-sm:grid-cols-1 max-sm:[&>a]:col-span-1 max-sm:[&>a:nth-child(5)]:col-start-auto">
+        <div className="mt-10 grid grid-cols-6 gap-px bg-line [&>a]:col-span-2 max-md:grid-cols-4 max-sm:grid-cols-1 max-sm:[&>a]:col-span-1">
           {destinations.map((destination) => (
             <Link
               className="group min-h-48 bg-paper p-6 transition-colors hover:bg-sage-soft"
